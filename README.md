@@ -43,3 +43,9 @@ PENSLV-1 dataset samples content:
 |Original|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Original.jpg" width="300">|Increase Brightness|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Increase%20Brightness.jpg" width="300">|
 |Gaussian Blurred|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Gaussian%20Blur.jpg" width="300">|Increase Contrast|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Increase%20Contrast.jpg" width="300">|
 |Gaussian Noise|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Gaussian%20Noise.jpg" width="300">|Decrease Brightness|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Decrease%20Brightness.jpg" width="300">|
+
+## Citation
+If you find this work useful, please cite:
+```
+publication pending
+```
