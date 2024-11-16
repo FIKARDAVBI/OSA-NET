@@ -4,5 +4,6 @@ The official resources for paper:
 >ZDM Fasya, AI Gunawan, BSB Dewantara
 
 OSA-Net architecure:
-![alt text](https://github.com/FIKARDAVBI/OSA-NET/blob/main/Assests/architecture.jpg?raw=true)
+![alt text](https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/architecture/architecture%20OSA-Net.jpg?raw=true)
 OSA-Module:
+![alt text](https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/architecture/OSA-Module.jpg?raw=true)
