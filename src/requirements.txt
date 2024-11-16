@@ -1,0 +1,9 @@
+torch
+torchvision
+tensorboardX
+tensorboard
+tensorflow
+pandas
+numpy
+scipy
+easydict
