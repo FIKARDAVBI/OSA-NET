@@ -35,7 +35,7 @@ download our PENSLV1 dataset images and corresponding ground truth density maps 
 PENSLV-1 dataset varied by the litopenaeus vannamei post-larvae(PL) ages (in days) and density:
 |PL5 Sparse|PL5 Slightly Dense|PL8 Slightly Dense|
 |---|---|---|
-|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL5%20Sparse.jpg" width="200">|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL5%20Slightly%20Dense.jpg" width="200">|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL8%20Slightly%20Dense.jpg" width="200">|
+|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL5%20Sparse.jpg" width="300">|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL5%20Slightly%20Dense.jpg" width="300">|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL8%20Slightly%20Dense.jpg" width="300">|
 
 PENSLV-1 dataset samples content:
 |Class|Image|Class|Image
