@@ -31,5 +31,10 @@ download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0
 
 ## Dataset
 download our PENSLV1 dataset samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
-PENSLV-1 dataset content:
 
+PENSLV-1 dataset content:
+|Class|Image|Class|Image
+|---|---|---|---|
+|Original|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Original.jpg" width="300">|Increase Brightness|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Increase%20Brightness.jpg" width="300">|
+|Gaussian Blurred|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Gaussian%20Blur.jpg" width="300">|Increase Contrast|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Increase%20Contrast.jpg" width="300">|
+|Gaussian Noise|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Gaussian%20Noise.jpg" width="300">|Decrease Brightness|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Decrease%20Brightness.jpg" width="300">|
