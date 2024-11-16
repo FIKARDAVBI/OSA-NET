@@ -30,9 +30,14 @@ OSA-Module:
 download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0-AiytPWX9jgVoTKhuZ3xodpYKG4G-R/view?usp=sharing)
 
 ## Dataset
-download our PENSLV1 dataset samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
+download our PENSLV1 dataset images and corresponding ground truth density maps samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
 
-PENSLV-1 dataset content:
+PENSLV-1 dataset varied by the litopenaeus vannamei post-larvae(PL) ages (in days) and density:
+|PL5 Sparse|PL5 Slightly Dense|PL8 Slightly Dense|
+|---|---|---|
+|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL5%20Sparse.jpg" width="200">|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL5%20Slightly%20Dense.jpg" width="200">|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/PL8%20Slightly%20Dense.jpg" width="200">|
+
+PENSLV-1 dataset samples content:
 |Class|Image|Class|Image
 |---|---|---|---|
 |Original|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Original.jpg" width="300">|Increase Brightness|<img src="https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/dataset/Increase%20Brightness.jpg" width="300">|
