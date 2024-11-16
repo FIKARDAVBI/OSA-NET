@@ -31,7 +31,7 @@ download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0
 
 |Model|Parameter|Dataset|MAE|MSE|
 |---|---|---|---|---|
-|OSANet|660 KB|PENSLV-1|1.99|2.69|
+|OSA-Net|660 KB|PENSLV-1|1.99|2.69|
 
 ## Dataset
 download our Politeknik Elektronika Negeri Surabaya Litopenaeus Vannamei 1 (PENSLV1) dataset images and corresponding ground truth density maps samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
