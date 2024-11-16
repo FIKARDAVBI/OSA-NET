@@ -22,13 +22,14 @@ OSA-Module:
 3. install dependencies
    ```
    cd {Repo_ROOT}
-   pip install -r requirements.txt
+   pip install -r src/requirements.txt
    ```
-4. we encourage to use crowd counting framework [C-3-Framework](https://github.com/gjy3035/C-3-Framework) by ghy3035 for training (the repo is not longer maintain)
+4. we encourage to use crowd counting framework [C-3-Framework](https://github.com/gjy3035/C-3-Framework) by ghy3035 for training (use requirement in this repo because C-3-Framework repo is no longer maintained)
 
 ## Pre-Trained Model
 download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0-AiytPWX9jgVoTKhuZ3xodpYKG4G-R/view?usp=sharing)
 
 ## Dataset
-download our PENSLV1 dataset samples [here]()
+download our PENSLV1 dataset samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
 PENSLV-1 dataset content:
+
