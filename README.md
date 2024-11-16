@@ -29,8 +29,12 @@ The official resources for paper:
 ## Pre-Trained Model
 download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0-AiytPWX9jgVoTKhuZ3xodpYKG4G-R/view?usp=sharing)
 
+|Model|Parameter|Dataset|MAE|MSE|
+|---|---|---|---|---|
+|OSANet|660 KB|PENSLV-1|1.99|2.69|
+
 ## Dataset
-download our PENSLV1 dataset images and corresponding ground truth density maps samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
+download our Politeknik Elektronika Negeri Surabaya Litopenaeus Vannamei 1 (PENSLV1) dataset images and corresponding ground truth density maps samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
 
 PENSLV-1 dataset varied by the litopenaeus vannamei post-larvae(PL) ages (in days) and density:
 |PL5 Sparse|PL5 Slightly Dense|PL8 Slightly Dense|
