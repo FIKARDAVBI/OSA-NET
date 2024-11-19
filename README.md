@@ -9,9 +9,13 @@ The official resources for paper:
 ![alt text](https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/architecture/OSA-Module.jpg?raw=true)
 
 ## Contributions
-1. OSA-Net evolved from original Scale Aggregation Network (SANet) that have been channels trimmed as the model is designed for edge devices. (size of parameter: 0.66 MB).
-2. OSA-Module adapt from Scale Aggregation Module in SANet with additional squeeze and excitation networks to refine the features (MAE: 1.99 and MSE: 2.69).
-3. Dataset PENSLV-1 consist of Litopenaeus Vannamei post larvae aged 5 and 8 days is created for training and testing the model performance compare to other density map regression model.
+1. A compact network called OSA-Net, designed for edge devices to count Litopenaeus Vannamei post-larvae (size of parameter: 0.66 MB).
+2. Optimized Scale Aggregation Module (OSA-Module) with squeeze-and-excitation networks embedding to generate high quality density maps (MAE: 1.99 and MSE: 2.69).
+3. PENSLV-1 dataset consists of varied aged and density of Litopenaeus Vannamei post-larvae to train model, and additional PENSLV-2 dataset to test model on unseen data.
+
+```
+   Contact Information : davbi@pasca.student.pens.ac.id or fikardavbi12@gmail.com
+```
 
 ## Preparation
 1. clone this repo
@@ -34,7 +38,7 @@ download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0
 |OSA-Net|660 KB|PENSLV-1|1.99|2.69|
 
 ## Dataset
-download our Politeknik Elektronika Negeri Surabaya Litopenaeus Vannamei 1 (PENSLV1) dataset images and corresponding ground truth density maps samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
+download our Politeknik Elektronika Negeri Surabaya Litopenaeus Vannamei 1 (PENSLV-1) dataset samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
 
 PENSLV-1 dataset varied by the litopenaeus vannamei post-larvae(PL) ages (in days) and density:
 |PL5 Sparse|PL5 Slightly Dense|PL8 Slightly Dense|
