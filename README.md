@@ -35,6 +35,9 @@ download our pretrained model here [OSA-Net](https://drive.google.com/file/d/1r0
 |---|---|---|---|---|
 |OSA-Net|660 KB|PENSLV-1|1.99|2.69|
 
+### result:
+![alt text](https://github.com/FIKARDAVBI/OSA-NET/blob/main/assests/output/OSA-Net%20result.jpg)
+
 ## Dataset
 download our Politeknik Elektronika Negeri Surabaya Litopenaeus Vannamei 1 (PENSLV-1) dataset samples [here](https://drive.google.com/file/d/1P0Fh4hCIMQyhZSjrfbFfjcwlZMheVUsP/view?usp=sharing)
 
