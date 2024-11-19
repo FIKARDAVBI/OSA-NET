@@ -13,9 +13,7 @@ The official resources for paper:
 2. Optimized Scale Aggregation Module (OSA-Module) with squeeze-and-excitation networks embedding to generate high quality density maps (MAE: 1.99 and MSE: 2.69).
 3. PENSLV-1 dataset consists of varied aged and density of Litopenaeus Vannamei post-larvae to train model, and additional PENSLV-2 dataset to test model on unseen data.
 
-```
-   Contact Information : davbi@pasca.student.pens.ac.id or fikardavbi12@gmail.com
-```
+> Contact Information : davbi@pasca.student.pens.ac.id or fikardavbi12@gmail.com
 
 ## Preparation
 1. clone this repo
