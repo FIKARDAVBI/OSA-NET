@@ -21,7 +21,7 @@ class PreActBlock(nn.Module):
         if self.adjust:
             self.residual_conv = nn.Conv2d(in_channels, out_channels, kernel_size=1, stride=stride, bias=False)
         
-        # Squeeze-and-excitation (restructured)
+        # Squeeze-and-excitation
         self.squeeze = nn.AdaptiveAvgPool2d(1)
         self.excitation1 = nn.Conv2d(out_channels, out_channels // 16, kernel_size=1)
         self.excitation2 = nn.Conv2d(out_channels // 16, out_channels, kernel_size=1)
