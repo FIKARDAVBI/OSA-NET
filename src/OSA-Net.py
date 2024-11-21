@@ -7,50 +7,35 @@ from misc.utils import initialize_weights
 import pdb
 
 class PreActBlock(nn.Module):
-    def __init__(self, in_channels, out_channels, stride=1):
+    def __init__(self, in_planes, planes, stride=1):
         super(PreActBlock, self).__init__()
-        
-        # Initializing normalization and convolution layers
-        self.norm1 = nn.BatchNorm2d(in_channels)
-        self.norm2 = nn.BatchNorm2d(out_channels)
-        self.conv_layer1 = nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=stride, padding=1, bias=False)
-        self.conv_layer2 = nn.Conv2d(out_channels, out_channels, kernel_size=3, stride=1, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(in_planes)
+        self.conv1 = nn.Conv2d(in_planes, planes, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(planes)
+        self.conv2 = nn.Conv2d(planes, planes, kernel_size=3, stride=1, padding=1, bias=False)
 
-        # Adjust dimensions if stride changes or in_channels != out_channels
-        self.adjust = (stride != 1 or in_channels != out_channels)
-        if self.adjust:
-            self.residual_conv = nn.Conv2d(in_channels, out_channels, kernel_size=1, stride=stride, bias=False)
-        
-        # Squeeze-and-excitation
-        self.squeeze = nn.AdaptiveAvgPool2d(1)
-        self.excitation1 = nn.Conv2d(out_channels, out_channels // 16, kernel_size=1)
-        self.excitation2 = nn.Conv2d(out_channels // 16, out_channels, kernel_size=1)
+        if stride != 1 or in_planes != planes:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_planes, planes, kernel_size=1, stride=stride, bias=False)
+            )
 
-    def forward(self, input_tensor):
-        # First stage
-        normed_input = self.norm1(input_tensor)
-        activated_input = F.relu(normed_input)
-        primary_output = self.conv_layer1(activated_input)
+        self.fc1 = nn.Conv2d(planes, 1, kernel_size=1)
+        self.fc2 = nn.Conv2d(1, planes, kernel_size=1)
 
-        # Second stage
-        normed_output = self.norm2(primary_output)
-        activated_output = F.relu(normed_output)
-        final_conv = self.conv_layer2(activated_output)
+    def forward(self, x):
+        out = F.relu(self.bn1(x))
+        shortcut = self.shortcut(out) if hasattr(self, 'shortcut') else x
+        out = self.conv1(out)
+        out = self.conv2(F.relu(self.bn2(out)))
 
-        # Squeeze-and-Excitation Mechanism
-        scale = self.squeeze(final_conv)
-        scale = F.relu(self.excitation1(scale))
-        scale = torch.sigmoid(self.excitation2(scale))
-        final_conv = final_conv * scale
+        w = F.avg_pool2d(out, (out.size(2), out.size(3)))
+        w = F.relu(self.fc1(w))
+        w = F.sigmoid(self.fc2(w))
 
-        # Residual connection
-        if self.adjust:
-            residual = self.residual_conv(activated_input)
-        else:
-            residual = input_tensor
+        out = out * w
 
-        output = final_conv + residual
-        return output
+        out += shortcut
+        return out
 
 class BasicConv(nn.Module):
     def __init__(self, in_channels, out_channels, use_bn=False, **kwargs):
